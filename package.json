@@ -1,5 +1,5 @@
 {
-    "name": "@zoomus/websdk",
+    "name": "zoomus/sdk",
     "version": "1.7.10",
     "description": "Zoom Web SDK",
     "main": "index.js",
@@ -8,15 +8,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/zoom/websdk.git"
+        "url": "git@github.com:divsbhalala/zoomSdk.git"
     },
     "keywords": ["zoom", "web", "sdk"],
     "author": "Jack Yang",
     "license": "MIT",
-    "homepage": "https://github.com/zoom/websdk#readme",
-    "bugs": {
-        "url": "https://github.com/zoom/websdk/issues"
-    },
     "dependencies": {
         "react": "16.8.6",
         "react-dom": "16.8.6",
