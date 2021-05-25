@@ -1,4 +1,98 @@
 # CHANGELOG
+## version 1.8.6
+## Bug Fixes
+1. Fixed Attendee cannot join in to BreakOut Room when "Enable Waiting Room" is enabled
+2. Fixed Attendee Leaves meeting show 'trying to reconect'
+3. Fixed Joined audio user can't show wating room when be put on hold
+4. Fixed Android Chrome Audio don't work
+5. Fixed Audio stops working when High-Fidelity/Stereo Mode is Enabled
+6. Fixed Start Video Black Screen in Mac When Only One attendee
+7. Fixed "The host mute/unmuted you" when call me success/hangeup
+8. Fixed definition of ZooMtg.i18n wrong
+9. Fixed co-host call rename/muteAll/expel/record/lockMeeting/putOnHold API no privilege
+
+## Enhancements
+1. polling switcher split meeting and webinar
+2. remove default load language resource cause 404
+3. Add setSupportLanguage api
+## version 1.8.5
+
+## Add
+1. support for Breakout Rooms.
+2. support for Polling.
+3. support for Live Transcription.
+4. support for the host to use the Host key to claim the meeting as a host when meeting no host
+5. support reclaim host for joined use (role=1)
+6. support to assign new hosts before leaving the meeting.
+7. support for authentication names for starting and joining meetings from China.
+8. new AES-GCM encryption and decryption audio support.
+9. support for logging out integrating within Zoom for authentication meeting.
+10. init API add Enable/Disable Breakout Rooms and Polling option
+
+## Enhancements
+1. Redesigned the Report a user in-meeting form.
+2. Remove Jquery. all $.i18n -> ZoomMtg.i18n
+3. Provided es5 support within the npm version.
+4. multi-lang need manual load
+   
+## Bug Fixes
+1. Fixed bug that displays black screen when host starts screen sharing.
+2. Fixed UI issues where the Join Computer Audio button does not display properly within the small window.
+3. Fixed UI issue where Active speaker is covered by speaker name within the small window.
+4. Fixed issue where a user clicks Leave meeting and leave url does not work.
+5. Fixed issue where clicking Phone call buttons returns error & black screen.
+6. Fixed API issue where isSupportVA false.
+7. Fixed API showMeetingHeader false in waiting room black screen
+8. Fixed UI issue where “Guest” title shows for all non hosts.
+
+
+## version 1.8.3
+## Bug Fixes
+1. Fixed phone Passcode Missing
+2. Fixed enter/exit fullscreen after leaving meeting in safari(ipad)
+3. Fixed text overflows issue for some language
+4. Fixed enhance download wasm files timeout issue.
+5. Fixed auto hide "talk" text area for IE11
+6. Fixed automatically sort raised hands to the top(me->host->co-host->raised->others)
+7. Fixed unexcept "The host unmuted you" after call me success
+8. Fixed Japanese translation for the waiting room.
+
+## version 1.8.1
+## Bug Fixes
+1. Fixed bug that prevents attendees from Disable or Enable video receiving.
+2. Fixed sharing content resolution compression. 
+3. Fixed CSS issue where Zooms scrollbar css styles are overwritten by browser global styles. 
+4. Fixed bug where the onMeetingStatus api does not throw connected and disconnected callback events. 
+5. Fixed bug where audio does not work after successfully reconnecting and rejoining the meeting
+6. Fixed video resolution bug where the default video resolution should be 360p instead of 180p.
+ 
+## Add
+1. Added new API getCurrentMeetingInfo to return meeting information.  
+2. Show dialog to use E2E meetings for either Desktop or Mobile clients.
+
+## version 1.8.0
+## Add
+1. Webinar Panelist/Host support
+2. Webinar promote/depromote
+3. Multi participant sharing
+4. Search box for attendee list
+5. meeting/webinar co-host
+6. Registration Webinar
+7. Webinar attendee Allow to talk
+8. Merge attendee's phone call and video
+9. Start Webinar(role=1, require host/alternative email), other email try to start will show "Not allow to start webinar from web."
+10. inMeetingServiceListener API
+12. Support Play Chime for Enter/Exit and Chat Message/Raise Hand
+13. ajax call use axios(dependence)
+
+## Bug Fixes
+1. Reconnecting uses a different participant id
+2. Black screen when Web SDK user is spotlighted
+
+## Enhancements
+1. fix with noise
+2. Simd support(need apply try https://developers.chrome.com/origintrials/#/trials/active)
+3. Waiting room notice(sound and browser notice)
 
 ## version 1.7.10
 ## Bug Fixes
